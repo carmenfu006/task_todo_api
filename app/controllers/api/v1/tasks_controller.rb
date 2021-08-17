@@ -1,6 +1,8 @@
 class Api::V1::TasksController < ApplicationController
   before_action :find_task, only: [:show, :update, :destroy]
 
+  # http://localhost:3000/api/v1/
+  
   # GET /tasks 
   def index
     @tasks = Task.all
